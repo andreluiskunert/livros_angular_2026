@@ -1,0 +1,11 @@
+/* estilos da lista de livros */
+
+table {
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 8px;
+  border: 1px solid #ccc;
+}
