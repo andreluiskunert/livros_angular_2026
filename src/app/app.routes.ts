@@ -1,10 +1,9 @@
 import { Routes } from '@angular/router';
-
-import { ListaComponent } from './lista/lista.component';
-import { CadastroComponent } from './cadastro/cadastro.component';
+import { LivroCadastro } from './features/livro-cadastro/livro-cadastro';
+import { LivroListaComponent } from './features/livro-lista/livro-lista';
 
 export const routes: Routes = [
-  { path: 'lista', component: ListaComponent },
-  { path: 'novo', component: CadastroComponent },
+  { path: 'novo', component: LivroCadastro },
+  { path: 'lista', component: LivroListaComponent },
   { path: '', redirectTo: 'lista', pathMatch: 'full' }
 ];

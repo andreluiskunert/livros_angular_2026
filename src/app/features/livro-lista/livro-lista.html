@@ -1,0 +1,8 @@
+<h2>Lista de Livros</h2>
+
+<ul>
+  <li *ngFor="let livro of service.listar(); let i=index">
+    {{livro.titulo}} - {{livro.autor}} - {{livro.editora}}
+    <button (click)="excluir(i)">Excluir</button>
+  </li>
+</ul>
